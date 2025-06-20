@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Rock Paper Scissors</h1>
+      <hr />
+      <h2>Score:</h2>
+      <div class="display" style="height: 70px">
+        <div class="scores">
+          <h2>You:</h2>
+          <p id="player-score">0</p>
+        </div>
+        <div class="scores">
+          <h2>Computer:</h2>
+          <p id="computer-score">0</p>
+        </div>
+        <div class="scores">
+          <h2>Ties:</h2>
+          <p id="ties">0</p>
+        </div>
+      </div>
+      <button id="reset-button" onclick="resetScore()">Reset Score</button>
+      <div id="makeyourmove">
+        <h2>Make your Move:</h2>
+        <div id="options">
+          <button class="move-options" id="rock" onclick="playRound(this.id)">
+            👊
+          </button>
+          <button class="move-options" id="paper" onclick="playRound(this.id)">
+            🖐
+          </button>
+          <button
+            class="move-options"
+            id="scissors"
+            onclick="playRound(this.id)"
+          >
+            ✌
+          </button>
+        </div>
+      </div>
+      <div id="yourmove">
+        <h2>You chose:</h2>
+        <div class="display"><p id="player-choice">?</p></div>
+      </div>
+      <div id="computermove">
+        <h2>Computer chose:</h2>
+        <div class="display"><p id="computer-choice">?</p></div>
+      </div>
+      <div id="result-outer-div">
+        <h2>Result:</h2>
+        <div class="display"><p id="result-display">Waiting...</p></div>
+      </div>
+      <br />
+      <hr />
+      <div id="rules">
+        <h2>How to play:</h2>
+        <p>
+          Choose Rock, Paper, or Scissors. Rock crushes Scissors, Paper covers
+          Rock, Scissors cuts Paper. Best of luck!
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

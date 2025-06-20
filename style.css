@@ -1,0 +1,100 @@
+:root {
+  --raisin-black: rgb(35, 31, 32);
+  --caribbbean-current: rgb(36, 106, 115);
+  --aquamarine: rgb(149, 249, 227);
+  --golden-rod: rgb(213, 160, 33);
+  --aureolin: rgb(238, 232, 44);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--raisin-black);
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+main {
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  width: 90%;
+  padding: 20px;
+}
+.display {
+  border: 2px solid var(--golden-rod);
+  background-color: rgba(238, 232, 44, 0.5);
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--golden-rod);
+  font-weight: bold;
+}
+.scores > h2 {
+  padding-top: 35px;
+  margin-bottom: 0;
+}
+.scores > p {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+div > p {
+  font-size: xx-large;
+}
+
+#options {
+  display: flex;
+  justify-content: space-evenly;
+}
+.move-options {
+  font-size: xxx-large;
+  border-radius: 50%;
+  border-width: 0;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: var(--raisin-black);
+}
+.move-options:hover {
+  background-color: var(--caribbbean-current);
+  border-color: var(--raisin-black);
+  border-width: 4px;
+  border-style: solid;
+  transition: ease-in-out 500ms;
+  font-size: 60px;
+}
+
+#rules > p {
+  font-size: large;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+#reset-button {
+  font-size: large;
+  border-radius: 20px;
+  color: white;
+  border-width: 0;
+  padding: 20px;
+  background-color: var(--raisin-black);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#reset-button:hover {
+  background-color: var(--caribbbean-current);
+  border-color: var(--raisin-black);
+  border-width: 4px;
+  border-style: solid;
+  transition: ease-in-out 300ms;
+  font-size: x-large;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
